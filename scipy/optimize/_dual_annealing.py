@@ -647,6 +647,7 @@ def dual_annealing(func, bounds, args=(), maxiter=1000,
 
     t1 = np.exp((visit - 1) * np.log(2.0)) - 1.0
     # Run the search loop
+    println("entering annealing on line 650")
     while(not need_to_stop):
         for i in range(maxiter):
             # Compute temperature for this step
